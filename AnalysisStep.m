@@ -63,7 +63,7 @@ end
 
 EL_ave = log((1+Ladapt_ave./0.0182)./(1+Ladapt_ave./3));
 EM_ave = (log(1./Aadapt_ave-1))/DRfitForA0.N-EL_ave;
-M_ave = -EM_ave/1.7+1;
+M_ave = -EM_ave/1.875+1;
 Kr_b_ave = Aadapt_ave./(1-Aadapt_ave);
 
 Kr_b_all = Aadapt_all./(1-Aadapt_all);
@@ -84,7 +84,7 @@ errorbar(Ladapt_ave,Aadapt_ave,Aadapt_std);
 %
 EL_all = log((1+Ladapt_all./0.0182)./(1+Ladapt_all./3));
 EM_all = (log(1./Aadapt_all-1))/DRfitForA0.N-EL_all;
-M_all = -EM_all/1.7+1;
+M_all = -EM_all/1.875+1;
 Kr_b_all = Aadapt_all./(1-Aadapt_all);
 
 a*exp(-3.*(1.095*x+2.4)^2/2/11.4/l)
